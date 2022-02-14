@@ -6,17 +6,17 @@ public abstract class Shape {
 
     public double GetSideLength(int sideLengthNumber){
         if(sideLengthNumber >= listOfPoints.length - 1){
-            GetSideLength(listOfPoints[listOfPoints.length - 1], listOfPoints[0]);
+            return CalculateSideLength(listOfPoints[listOfPoints.length - 1], listOfPoints[0]);
         }
         else if(sideLengthNumber < 0){
-            GetSideLength(listOfPoints[0], listOfPoints[1]);
+            return CalculateSideLength(listOfPoints[0], listOfPoints[1]);
         }
         else{
-            GetSideLength(listOfPoints[sideLengthNumber], listOfPoints[sideLengthNumber + 1]);
+            return CalculateSideLength(listOfPoints[sideLengthNumber], listOfPoints[sideLengthNumber + 1]);
         }
     }
 
-    private double GetSideLength(Point point0, Point point1){
+    private double CalculateSideLength(Point point0, Point point1){
         //Does the GetSideLength math work stuff
     }
 
