@@ -1,5 +1,6 @@
 package org.WalkerCC_CompSci;
 
+
 public class Quadrilateral extends Shape{
 
     public Quadrilateral(Point point0, Point point1, Point point2, Point point3){
@@ -14,4 +15,8 @@ public class Quadrilateral extends Shape{
     }
 
 
+    @Override
+    protected double GetSideLength() {
+        return 0;
+    }
 }
